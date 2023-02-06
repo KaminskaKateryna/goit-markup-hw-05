@@ -121,6 +121,7 @@ img {
 .header-link:focus {
   color: var(--hover-color);
   text-decoration: none;
+  
 }
 .header-link:active {
   color: var(--accent-color);
@@ -159,12 +160,14 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+
 }
 .hero {
   background: var(--dark-background-color);
@@ -206,13 +209,15 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   border: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
-  background: var(--hover-color);
+  background-color: var(--hover-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 4px;
+  
 }
 .hero-button:active {
   background: var(--hover-color);
@@ -383,17 +388,21 @@ img {
 
   color: var(--accent-color);
 
-  background: var(--light-background-color);
+  background-color: var(--light-background-color);
   border: 1px solid #e7e9fc;
 
   border-radius: 4px;
 
   padding: 12px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+
 }
 .button:hover,
 .button:focus {
   color: var(--focus-text-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   align-items: center;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -405,6 +414,7 @@ img {
   display: block;
   text-decoration: none;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter:hover,
 .filter:focus  {
@@ -497,6 +507,7 @@ transition: transform 250ms  linear;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -527,6 +538,7 @@ transition: transform 250ms  linear;
   align-items: center;
   justify-content: center;
   color: #8e8f99;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon {
   fill: currentColor;
@@ -596,6 +608,7 @@ transition: transform 250ms  linear;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-icon {
   fill: #f4f4fd;
