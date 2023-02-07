@@ -629,9 +629,12 @@ img {
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal-close {
-  position: absolute;
+  /* position: absolute;
   right: 24px;
-  top: 24px;
+  top: 24px; */
+  cursor: pointer;
+  display: block;
+  margin-left:  auto;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
@@ -652,6 +655,7 @@ img {
   fill: currentColor;
 }
 .modal {
+  padding: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -673,4 +677,26 @@ img {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-input{
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 26px;
+  padding-left: 16px;
+}
+
+.modal-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #2E2F42;
+margin-top: 24px;
+margin-bottom: 16px;
 }
